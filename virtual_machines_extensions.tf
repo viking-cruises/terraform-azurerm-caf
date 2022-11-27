@@ -1,7 +1,7 @@
 #
 # microsoft_enterprise_cloud_monitoring - Install the monitoring agent in the virtual machine
 #
-
+/*
 module "vm_extension_monitoring_agent" {
   source = "./modules/compute/virtual_machine_extensions"
 
@@ -120,3 +120,4 @@ module "keyvault_for_windows" {
   extension_name          = "keyvault_for_windows"
   keyvaults               = local.combined_objects_keyvaults
 }
+*/

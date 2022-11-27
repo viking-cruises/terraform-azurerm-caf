@@ -1,3 +1,4 @@
+/*
 module "vmss_extension_custom_scriptextension" {
   source = "./modules/compute/virtual_machine_scale_set_extensions"
 
@@ -113,3 +114,4 @@ module "vmss_extension_custom_script_data_factory_self_hosted_runtime" {
     storage_accounts                             = local.combined_objects_storage_accounts
   }
 }
+*/

@@ -10,14 +10,17 @@ terraform {
       ]
     }
     azuread = {
+      skip_provider_registration = "true"
       source  = "hashicorp/azuread"
       version = "~> 2.43.0"
     }
     azapi = {
+      skip_provider_registration = "true"
       source  = "azure/azapi"
       version = "~> 1.6.0"
     }
     azurecaf = {
+      skip_provider_registration = "true"
       source  = "aztfmod/azurecaf"
       version = "~> 1.2.0"
     }

@@ -35,6 +35,13 @@ provider "azapi" {
   skip_provider_registration = true
 }
 
+provider "azurerm" {
+  alias = "vhub"
+  skip_provider_registration = true
+  features {}
+}
+
+
 data "azurerm_subscription" "primary" {}
 data "azurerm_client_config" "current" {}
 data "azuread_client_config" "current" {}

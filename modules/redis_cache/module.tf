@@ -49,7 +49,7 @@ resource "azurerm_redis_cache" "redis" {
       rdb_backup_max_snapshot_count   = lookup(redis_configuration.value, "rdb_backup_max_snapshot_count", null)
       rdb_storage_connection_string   = lookup(redis_configuration.value, "rdb_storage_connection_string", null)
       active_directory_authentication_enabled = lookup(redis_configuration.value, "active_directory_authentication_enabled, null)
-      data_persistence_authentication_method  = lookup(redis_configuration.value,"data_persistence_authentication_method",null)
+      data_persistence_authentication_method  = lookup(redis_configuration.value, "data_persistence_authentication_method",null)
     }
   }
 

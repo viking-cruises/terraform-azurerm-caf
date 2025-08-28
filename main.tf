@@ -2,7 +2,6 @@
 terraform {
   required_providers {
     azurerm = {
-      skip_provider_registration = true
       source  = "hashicorp/azurerm"
       version = "~> 3.85.0"
       configuration_aliases = [
@@ -35,6 +34,11 @@ terraform {
 
 provider "azapi" {
   skip_provider_registration = true
+}
+
+provider "azurerm" {      
+  skip_provider_registration = true
+  features {}
 }
 
 data "azurerm_subscription" "primary" {}

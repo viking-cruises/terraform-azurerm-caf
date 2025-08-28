@@ -62,7 +62,7 @@ resource "azurerm_cosmosdb_account" "cosmos_account" {
 
     content {
       type                = backup.value.type
-      tier                = try(backup.value.tier, null)
+      #tier                = try(backup.value.tier, null)
       interval_in_minutes = try(backup.value.interval_in_minutes, null)
       retention_in_hours  = try(backup.value.retention_in_hours, null)
       storage_redundancy  = try(backup.value.storage_redundancy, null)

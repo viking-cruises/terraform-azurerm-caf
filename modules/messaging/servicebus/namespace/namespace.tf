@@ -19,9 +19,9 @@ resource "azurerm_servicebus_namespace" "namespace" {
   name                         = azurecaf_name.namespace.result
   sku                          = var.settings.sku
   capacity                     = try(var.settings.capacity, null)
-  zone_redundant               = try(var.settings.zone_redundant, null)
+  #zone_redundant               = try(var.settings.zone_redundant, null)
   tags                         = merge(try(var.settings.tags, null), local.caf_tags)
-  premium_messaging_partitions = try(var.settings.premium_messaging_partitions, null)
+  #premium_messaging_partitions = try(var.settings.premium_messaging_partitions, null)
   location                     = local.location
   resource_group_name          = local.resource_group_name
 }

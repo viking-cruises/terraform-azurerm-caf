@@ -37,7 +37,7 @@ provider "azapi" {
 }
 
 provider "azurerm" {      
-  #resource_provider_registrations = []
+  skip_provider_registration = true
   features {}
 }
 
